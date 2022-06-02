@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+
+
+.Testimonial_container {
+  background-image:url("../../images/quote-bg.png");
+  margin-top: 100px;
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+.desc {
+  color: white;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  margin-top: 50px;
+}
+
+.desc {
+  font-family: "Poppins", sans-serif;
+  width: 60%;
+}
+.user {
+  font-family: "Poppins", sans-serif;
+  color: #cd9f58;
+}
+.button .btn {
+  margin-right: 8px;
+  margin-top: 1.5em;
+}

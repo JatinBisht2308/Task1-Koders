@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.Categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Categories_container {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-top: -10%;
+}
+
+.Categories_desc {
+    background-color: #CD9F58;
+    width: 21%;
+    padding: 50px 50px;
+    text-align: left;
+    color: #1E1D1D;
+    border-radius: 7px;
+    margin-right: 50px;
+}
+
+.Categories_desc h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.Categories_desc p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.Categories_desc button {
+    border: none;
+    background-color: #1E1D1D;
+    padding: 15px 50px;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in 0.3s;
+}
+.Categories_desc button:hover {
+
+    background-color: #ffffff;
+    color: black;
+
+}
+
+.Category_cards {
+    display: flex;
+}
