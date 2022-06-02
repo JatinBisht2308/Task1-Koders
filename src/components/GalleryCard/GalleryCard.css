@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+.GalleryCard {
+    width: 30%;
+    margin: 20px 0;
+}
+
+.GalleryCard_container img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.4);
+    margin-bottom: 15px;
+}
+
+.gallery_card_desc {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-left: 5px;
+    color: white;
+    padding-bottom: 8px;
+    border-bottom: 2px solid white;
+    width: 86%;
+}
