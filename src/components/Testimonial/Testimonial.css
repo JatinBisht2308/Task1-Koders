@@ -5,7 +5,7 @@
 
 .Testimonial_container {
   background-image:url("../../images/quote-bg.png");
-  margin-top: 100px;
+  margin-top: 80px;
   background-repeat:no-repeat;
   background-size: cover;
   height: 28rem;
@@ -23,7 +23,7 @@ h2,
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
-  margin-top: 50px;
+  margin-top: 28px;
 }
 
 .desc {
@@ -37,4 +37,7 @@ h2 {
 .button .btn {
   margin-right: 8px;
   margin-top: 1.5em;
+}
+.button{
+  margin-left: 10px;
 }

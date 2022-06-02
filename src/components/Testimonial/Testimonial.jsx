@@ -17,7 +17,7 @@ function Testimonial() {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
             earum maxime, non corrupti ex aperiam deleniti molestias sunt! Animi
             minus ipsum in laboriosam nesciunt. Officiis dolorum animi et ipsam
-            reprehenderit maxime voluptatem dolore voluptates!
+            reprehenderit maxime voluptatem dolore voluptates! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores corrupti dolorum alias.
           </p>
           <p className="user">- Lorem Ipsum</p>
           <div className="button">
