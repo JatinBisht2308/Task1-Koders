@@ -8,6 +8,7 @@ import baby from "../../images/Events/Baby.jpg";
 import mundan from "../../images/Events/Mundan.jpg";
 import haldi from "../../images/Events/Haldi.JPG";
 import bride from "../../images/Events/Bride.jpg";
+import deco from "../../images/Events/event_last.jpg"
 
 function Events() {
   return (
@@ -20,8 +21,10 @@ function Events() {
           </div>
           <div className="detail">
             <h6>Wedding Event</h6>
-            <p>Explore our wedding event prices.</p>
-            <button>Click</button>
+            <div className="sub_detail">
+              <p>“A happy marriage is union<br></br>of two good forgivers.” <br></br>– Robert Quillen </p>
+               <button>Check</button>
+            </div>
           </div>
         </div>
         <div className="event second">
@@ -30,8 +33,10 @@ function Events() {
           </div>
           <div className="detail">
             <h6>Anniversary Event</h6>
-            <p>Explore our anniversary event prices.</p>
-            <button>Click</button>
+            <div className="sub_detail">
+              <p>“A happy marriage is union<br></br>of two good forgivers.” <br></br>– Robert Quillen </p>
+               <button>Check</button>
+            </div>
           </div>
         </div>
         <div className="event third">
@@ -40,8 +45,10 @@ function Events() {
           </div>
           <div className="detail">
             <h6>Haldi Event</h6>
-            <p>Explore our haldi event prices.</p>
-            <button>Click</button>
+            <div className="sub_detail">
+              <p>“A happy marriage is union<br></br>of two good forgivers.” <br></br>– Robert Quillen </p>
+               <button>Check</button>
+            </div>
           </div>
         </div>
         <div className="event fourth">
@@ -50,8 +57,10 @@ function Events() {
           </div>
           <div className="detail">
             <h6>Theme Party</h6>
-            <p>Explore our theme based event prices.</p>
-            <button>Click</button>
+            <div className="sub_detail">
+              <p>“A happy marriage is union<br></br>of two good forgivers.” <br></br>– Robert Quillen </p>
+               <button>Check</button>
+            </div>
           </div>
         </div>
         <div className="event fifth">
@@ -60,8 +69,10 @@ function Events() {
           </div>
           <div className="detail">
             <h6>Birthday Parties</h6>
-            <p>Explore our birthday decoration prices.</p>
-            <button>Click</button>
+            <div className="sub_detail">
+              <p>“A happy marriage is union<br></br>of two good forgivers.” <br></br>– Robert Quillen </p>
+               <button>Check</button>
+            </div>
           </div>
         </div>
         <div className="event sixth">
@@ -70,8 +81,10 @@ function Events() {
           </div>
           <div className="detail">
             <h6>Bride Celebration</h6>
-            <p>Explore our bride event prices.</p>
-            <button>Click</button>
+            <div className="sub_detail">
+              <p>“A happy marriage is union<br></br>of two good forgivers.” <br></br>– Robert Quillen </p>
+               <button>Check</button>
+            </div>
           </div>
         </div>
         <div className="event seventh">
@@ -80,8 +93,10 @@ function Events() {
           </div>
           <div className="detail">
             <h6>Mundan Event</h6>
-            <p>Explore our mundan event prices.</p>
-            <button>Click</button>
+            <div className="sub_detail">
+              <p>“A happy marriage is union<br></br>of two good forgivers.” <br></br>– Robert Quillen </p>
+               <button>Check</button>
+            </div>
           </div>
         </div>
         <div className="event eighth">
@@ -90,8 +105,10 @@ function Events() {
           </div>
           <div className="detail">
             <h6>Baby Shower</h6>
-            <p>Explore our baby shower event prices.</p>
-            <button>Click</button>
+            <div className="sub_detail">
+              <p>“A happy marriage is union<br></br>of two good forgivers.” <br></br>– Robert Quillen </p>
+               <button>Check</button>
+            </div>
           </div>
         </div>
         <div className="event nineth">
@@ -100,8 +117,10 @@ function Events() {
           </div>
           <div className="detail">
             <h6>Proposal Decoration</h6>
-            <p>Explore our proposal decoration prices.</p>
-            <button>Click</button>
+            <div className="sub_detail">
+              <p>“A happy marriage is union<br></br>of two good forgivers.” <br></br>– Robert Quillen </p>
+               <button>Check</button>
+            </div>
           </div>
         </div>
       </div>
