@@ -2,7 +2,7 @@ import React from "react";
 import "./Categories.css";
 import CategorieCard from "../CategoryCard/CategoryCard";
 
-function categories() {
+function Categories() {
   return (
     <div className="Categories">
       <div className="Categories_container">
@@ -26,4 +26,4 @@ function categories() {
   );
 }
 
-export default categories;
+export default Categories;
