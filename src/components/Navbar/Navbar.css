@@ -4,12 +4,12 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
+
 .navbar_container{
     position:relative;
     display:flex;
     justify-content:center;
     align-items:center;
-    
 }
 .left-nav > a{
     margin-left: 110px;

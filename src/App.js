@@ -6,15 +6,19 @@ import Categories from './components/Categories/Categories';
 import Testimonial from './components/Testimonial/Testimonial';
 import Footer from './components/Footer/Footer'
 import Gallery from './components/Gallery/Gallery';
+import Contact from './components/Contact/Contact';
+// import GalleryPage from './components/GalleryPage/GalleryPage';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <LandingScreen />
+      {/* <Navbar />
+      <LandingScreen image />
       <Categories />
       <Gallery />
       <Testimonial />
-      <Footer />
+      <Footer /> */}
+      {/* <Contact /> */}
+      {/* <GalleryPage /> */}
     </div>
   );
 }
