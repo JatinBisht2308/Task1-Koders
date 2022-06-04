@@ -27,10 +27,10 @@ function Footer() {
         </div>
         <div className="container2">
           {/* for icons */}
-          <FaFacebookSquare style={{color: '#CD9F58', fontSize: '30px'}}/>
-          <BsInstagram style={{color: '#CD9F58', fontSize: '29px'}}/>
-          <FaTwitterSquare style={{color: '#CD9F58', fontSize: '30px'}}/>
-          <FaPinterestSquare style={{color: '#CD9F58', fontSize: '30px'}}/>
+          <FaFacebookSquare style={{color: '#CD9F58',className:"icon", fontSize: '2.3vw'}}/>
+          <BsInstagram style={{color: '#CD9F58', className:"icon",fontSize: '2.24vw'}}/>
+          <FaTwitterSquare style={{color: '#CD9F58',className:"icon", fontSize: '2.3vw'}}/>
+          <FaPinterestSquare style={{color: '#CD9F58',className:"icon", fontSize: '2.3vw'}}/>
         </div>
         <p id="copyright">
         <BiCopyright style={{color: 'white', fontSize: '10px'}}/> 2022 Lahar Events. All rights reserved.

@@ -22,11 +22,14 @@
 .content h1{
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-size: 3.1vw;
 }
 
 .content p{
     font-family: 'Poppins', sans-serif;
     color: white;
+    font-size: 1.35vw;
+    letter-spacing:0.09vw;
 }
 
 .content button {

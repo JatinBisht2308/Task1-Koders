@@ -8,19 +8,18 @@
     position:relative;
     display:flex;
     justify-content:center;
-    align-items:center;
-    
+    align-items:center; 
 }
 .left-nav > a{
-    margin-left: 110px;
+    margin-left: 7.5vw;
 }
 .right-nav > a{
-    margin-right: 110px;
+    margin-right: 7.5vw;
 }
 .center-logo img{
-    height: 100px;
-    margin: 10px 60px;
-    padding: 10px;
+    height: 8vw;
+    margin: 0.1vw 6vw;
+    padding: 1vw;
 }
 
 .navbar_container a:hover{
@@ -28,4 +27,13 @@
 }
 .navbar_container a{
   transition: all 0.3s ease-in-out;
+  font-size: 1.1vw;
+}
+.left-nav{
+    padding: 1vw;
+    text-align: center;
+}
+.right-nav{
+    padding: 1vw;
+    text-align:center;
 }

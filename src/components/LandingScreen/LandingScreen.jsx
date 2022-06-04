@@ -2,18 +2,18 @@ import React from "react";
 import "./LandingScreen.css";
 import home_image from '../../images/home_image.jpeg';
 
-function LandingScreen() {
+function LandingScreen({ imgsrc, title, desc, isButton }) {
   return (
     <div className="LandingScreen">
       <div className="landingScreen_container">
         <img
-          src={home_image}
+          src={imgsrc}
           alt=""
         />
         <div className="content">
-          <h1> WE MAKE EVENTS MEMORABLE </h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto est ut exercitationem ex nobis dolorem magnam nesciunt enim a!</p>
-          <button>book now</button>
+          <h1> {title} </h1>
+          <p>{desc}</p>
+          { isButton=="true" && <button>book now</button> }
         </div>
       </div>
     </div>

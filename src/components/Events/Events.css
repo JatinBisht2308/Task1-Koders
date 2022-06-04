@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+.Events h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #cd9f58;
+  text-align: center;
+  font-size: 3vw;
+}
+.Events {
+  background-color: black;
+  margin-top: -5px;
+  padding: 1vw 0vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.event img {
+  width: 310px;
+  height: 300px;
+  object-fit: cover;
+  transition: all ease-out 0.5s;
+}
+.image_cont {
+  width: 310px;
+  height: 300px;
+  transition: all ease-out 0.5s;
+}
+.event {
+  display: flex;
+  width: 300px;
+  height: 320px;
+  margin: 20px;
+  flex-direction: column;
+  margin: 40px 20px;
+  transform: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(black, 0.5)
+}
+.event_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem;
+  flex-wrap: wrap;
+  width: 80vw;
+  transition:1;
+  transition-property: transform;
+  /* flex-direction:column; */
+}
+.detail {
+  /* background-color: #cd9f58; */
+  transition:0.5s;
+  transition-property: transform;
+  height: 3.5vw;
+  align-items: center;
+  text-align: center;
+  width: 310px;
+  transition: all ease-out 0.5s;
+}
+.detail button{
+  opacity: 0;
+   transition:1s;
+  transition-property: opacity,transform;
+}
+.detail > p{
+  opacity: 0;
+  color: white;
+  transition:1s;
+  transition-property: transform;
+}
+.detail h6{
+  text-transform: uppercase;
+  color: rgb(17, 16, 16);
+  font-family: "Poppins", sans-serif;
+  font-size: 1vw;
+  font-weight: 500;
+  transition: all ease-in 0.5s;
+  margin-top: 1vw;
+}
+/* hover effects */
+.event:hover .event{
+  transform: translateY(20px);
+}
+.event:hover .image_cont{
+   height:220px;
+   opacity: 0.5;
+}
+.event:hover .image_cont img{
+  height:220px;
+  /* opacity: ; */
+}
+.event:hover .detail{
+  /* transform: translateY(-100px); */
+  /* padding-top: 100px;
+  margin-bottom: 200px;
+  padding-bottom: 400px; */
+  text-align: left;
+  align-items: left; 
+  height: 130px;
+}
+.event:hover .detail h6 {
+  color: white;
+  /* transform: translateY(-100px); */
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 2vw;
+  
+}
+
+.event:hover .detail p{
+  opacity: 1;
+  transform: translateY(-25px);
+  margin-left: 10px;
+}
+.event:hover .detail button{
+  opacity: 1;
+  transform: translateY(-25px);
+  text-align: right;
+  /* margin-bottom: 200px; */
+  margin-left: 100px;
+}
