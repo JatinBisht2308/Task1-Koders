@@ -21,6 +21,8 @@
   height: 300px;
   object-fit: cover;
   transition: all ease-out 0.5s;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 }
 .image_cont {
   width: 310px;
@@ -35,7 +37,7 @@
   flex-direction: column;
   margin: 40px 20px;
   transform: 0.4s ease-out;
-  box-shadow: 0px 7px 10px rgba(black, 0.5)
+  box-shadow: 0px 7px 10px rgba(black, 0.5);
 }
 .event_container {
   display: flex;
@@ -49,7 +51,8 @@
   /* flex-direction:column; */
 }
 .detail {
-  /* background-color: #cd9f58; */
+  /* display: flex; */
+  background-color: #cd9f58;
   transition:0.5s;
   transition-property: transform;
   height: 3.5vw;
@@ -57,13 +60,25 @@
   text-align: center;
   width: 310px;
   transition: all ease-out 0.5s;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+  /* opacity: 0.2; */
+  background: rgba(205, 159, 88,1);
+  backdrop-filter: blur(5px);
 }
-.detail button{
+.detail > .sub_detail > button{
   opacity: 0;
-   transition:1s;
+   transition:0.5s;
   transition-property: opacity,transform;
+  background-color: black;
+  margin-right: 1vw;
+  margin-bottom: 2vw;
 }
-.detail > p{
+.detail  > .sub_detail > p{
+  font-family:"Poppins",sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
   opacity: 0;
   color: white;
   transition:1s;
@@ -72,22 +87,40 @@
 .detail h6{
   text-transform: uppercase;
   color: rgb(17, 16, 16);
-  font-family: "Poppins", sans-serif;
-  font-size: 1vw;
+  /* font-family: "Poppins", sans-serif; */
+  font-size: 1.1vw;
   font-weight: 500;
   transition: all ease-in 0.5s;
   margin-top: 1vw;
+  /* margin: 0; */
 }
+.sub_detail{
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  text-align: center;
+  align-items: center;
+}
+/* .event_last{
+  background-image: url("../../images/Events/event_last.jpg");
+  width: 100%;
+  height: 30vw;
+  margin-top: 30px;
+  object-fit: cover;
+} */
 /* hover effects */
 .event:hover .event{
   transform: translateY(20px);
+  transform: scale(1.03, 1.03);
 }
 .event:hover .image_cont{
    height:220px;
    opacity: 0.5;
+   transform: scale(1.03, 1.03);
 }
 .event:hover .image_cont img{
   height:220px;
+  transform: scale(1.03, 1.03);
   /* opacity: ; */
 }
 .event:hover .detail{
@@ -97,28 +130,38 @@
   padding-bottom: 400px; */
   text-align: left;
   align-items: left; 
-  height: 130px;
+  height: 120px;
+  padding-top: 4px;
+  padding-bottom: -5px;
+  /* transform: scale(1.03, 1.03); */
 }
-.event:hover .detail h6 {
-  color: white;
+.event:hover .detail > h6 {
+  color: rgb(0, 0, 0);
+  /* background-color: black; */
   /* transform: translateY(-100px); */
   font-family: "Montserrat", sans-serif;
   font-size: 1.2vw;
   font-weight: 700;
-  text-align: left;
-  margin-left: 2vw;
-  
+  text-align: center;
+  margin-bottom: 1.7vw;
 }
 
-.event:hover .detail p{
+.event:hover .detail > .sub_detail >p{
   opacity: 1;
   transform: translateY(-25px);
-  margin-left: 10px;
+  margin-left: 1vw;
+  font-size: 0.9vw;
 }
-.event:hover .detail button{
+.event:hover .detail > .sub_detail > button{
   opacity: 1;
   transform: translateY(-25px);
-  text-align: right;
   /* margin-bottom: 200px; */
-  margin-left: 100px;
+  /* margin-left: 100px; */
+  color: #cd9f58;
+  transform: scale(1.03, 1.03);
+  font-family: "Poppins",sans-serif;
+  text-align: right;
+}
+.event:hover .sub_detail{
+  text-align: left;
 }
