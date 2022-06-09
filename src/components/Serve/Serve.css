@@ -2,43 +2,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 .Serve-Container {
   background-color: black;
-  height: 38vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0px 35px;
-  /* margin-top: 20px; */
+  text-align: center;
+  padding: 5% 10%;
 }
 .left-serve {
-  /* background-color: white; */
-  height: 25vw;
-  width: 40vw;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: left;
+  padding-right: 11%;
 }
 
 .left-serve h2 {
   color: #cd9f58;
   font-family: "Montserrat", sans-serif;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 .left-serve h4 {
   color: #cd9f58;
   font-family: "Poppins", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
 }
 .left-serve p {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  font-size: 1.35vw;
+  font-size: 1.2vw;
   letter-spacing: 0.09vw;
 }
 .right-serve {
-  /* background-color: #cd9f58; */
-  height: 25vw;
-  width: 25vw;
+  border-radius: 1.5rem;
+  background: linear-gradient(45deg, transparent, #a27f4a, transparent);
+  align-items: center;
 }
-.right-serve img {
-  height: 25vw;
-  width: 25vw;
-  border-radius: 3px;
+.right-serve-image {
+  /* background-color: #cd9f58; */
+  height: 35vw;
+width: 30vw;
+/* overflow: hidden; */
+}
+.right-serve-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  transform: rotate(-10deg);
+  transition: all 0.9s ease;
+}
+.right-serve-image img:hover {
+  transform: rotate(0deg);
+}
+
+/* Media queries starts here */
+/* For mobiles only */
+@media screen and (max-width: 575px) {
+  /* changing the serve container from row to column flex direection */
+  .Serve-Container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .right-serve img{
+    width: 100vw;
+    height: auto;
+    max-width: 19rem;
+    max-height: 18rem;
+    border-radius: 1rem;
+  }
+  .right-serve{
+    align-items: center;
+  }
+  .right-serve-image{
+    align-items: center;
+    width: 90%;
+    height: 58%;
+  }
+  .left-serve{
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 6%;
+    padding: 0;
+  }
+  .Serve-Container{
+    align-items: center;
+  }
+  .left-serve h2{
+    font-size:7vw;
+  }
+  .left-serve p{
+    font-size:3.6vw;
+    /* text-align-last: left; */
+    align-items: center;
+  }
+  .left-serve h4{
+    font-size: 5vw;
+    text-align: center;
+  }
 }
