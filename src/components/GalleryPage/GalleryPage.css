@@ -1,0 +1,5 @@
+.gallery_section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vw 10vw;
+}

@@ -23,3 +23,9 @@
     border-bottom: 2px solid white;
     width: 86%;
 }
+
+@media only screen and (max-width: 600px) {
+    .GalleryCard {
+        width: 60%;
+    }
+}

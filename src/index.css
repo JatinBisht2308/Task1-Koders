@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1E1D1D;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 code {
@@ -14,17 +19,7 @@ code {
  
 html {
   scroll-behavior: smoooth;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 500;
-}
-
-h1 {
-  font-size: 2.5rem;
+  
 }
 
 section {

@@ -119,7 +119,7 @@ function Testimonial() {
                 <h2 className="client__name">{name}</h2>
                 <small className="client__review">
                   {reviewFirstHalf}
-                  <p classname="hide_testi">{reviewSecondHalf}</p>
+                  <p className="hide_testi">{reviewSecondHalf}</p>
                 </small>
               </SwiperSlide>
             );

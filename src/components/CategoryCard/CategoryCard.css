@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
 .CategoryCard {
-  width: 35%;
   margin-left: 25px;
 }
 
@@ -11,7 +10,7 @@
   color: white;
   padding: 1px;
   transition: transform 500ms ease;
-  width: 13rem;
+  width: 12rem;
   cursor: pointer;
 }
 
@@ -28,4 +27,38 @@
   font-family: 'Montserrat', sans-serif;
   margin: 15px 0px;
   font-weight: 500;
+  font-size: 1vw;
 } 
+
+@media only screen and (max-width: 1040px) {
+  .CategoryCard {
+    margin-left: 15px;
+  }
+  .CategoryCard_container {
+      width: 11rem;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .CategoryCard_container {
+      width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .CategoryCard_container {
+      width: 9rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .CategoryCard_container {
+      width: 8rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .CategoryCard_container {
+      width: 7rem;
+  }
+}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.Contact_outer_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px;
+
+}
+
+.Contact_container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact_details {
+    text-align: left;
+    width: 30%;
+}
+
+.contact_details h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 36x;
+}
+
+.contact_details p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contact_desc {
+    margin-top: 100px;
+}
+
+.contact_desc p {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact_details {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Contact_container {
+        flex-direction: column;
+    }
+    .contact_details {
+        width: 100%;
+        text-align: center;
+    }
+    .contact_desc {
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 13px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .contact_desc > p {
+        margin-right: 13px;
+    }
+}
