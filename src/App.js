@@ -13,19 +13,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar />
-        <LandingScreen
-          imgsrc={home_image}
-          title="WE MAKE EVENTS MEMORABLE"
-          desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto est ut exercitationem ex nobis dolorem magnam nesciunt enim a!"
-          isButton="true"
-        />
-        {/* <Categories /> */}
-      {/* <Gallery /> */}
-      {/* <About/> */}
-      {/* <Testimonial /> */}
-      {/* <Footer />  */}
-      <Services />
+      <Navbar />
+      <LandingScreen
+        imgsrc={home_image}
+        title="WE MAKE EVENTS MEMORABLE"
+        desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto est ut exercitationem ex nobis dolorem magnam nesciunt enim a!"
+        isButton="true"
+      />
+      <Categories />
+      <Gallery />
+      <Testimonial />
+      <Footer />
     </div>
   );
 }

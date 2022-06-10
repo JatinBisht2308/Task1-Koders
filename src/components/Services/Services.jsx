@@ -20,9 +20,6 @@ function Services() {
         isButton="true"
       />
       <Events />
-      <Testimonial />
-      <Story />
-      <Serve />
       <Footer />
     </div>
   );
