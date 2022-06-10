@@ -15,7 +15,7 @@
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
     padding: 15px 10px;
-    width: 250px;
+    width: 350px;
     border: 2px solid #1E1D1D;
     color: lightgray;
     margin-bottom: 20px;
@@ -25,10 +25,28 @@
 .ContactForm_container button {
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
-    width: 270px;
+    width: 350px;
     padding: 15px;
     background-color: #CD9F58;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .ContactForm_container input, textarea, button {
+        width: 250px !important;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .ContactForm_container input, textarea, button {
+        width: 200px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ContactForm_container input, textarea, button {
+        width: 250px !important;
+    }
 }

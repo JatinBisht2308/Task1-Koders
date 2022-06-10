@@ -16,9 +16,9 @@ function Contact() {
             <h1>Contact Us</h1>
             <p>Fill up the for and our team will get back to you within 24 hours.</p>
             <div className="contact_desc">
-            <p className="phone"><AiOutlinePhone style={{ color: '#CD9F58', position: 'relative', top: '4px', fontSize: '20px', marginRight: '10px' }} /> +91 9876543210</p>
-            <p className="email"><AiOutlineMail style={{ color: '#CD9F58', position: 'relative', top: '4px', fontSize: '20px', marginRight: '10px' }} /> loremipsum@gmail.com</p>
-            <p className="address"><ImLocation style={{ color: '#CD9F58', position: 'relative', top: '4px', fontSize: '20px', marginRight: '10px' }} /> Kargi Chowk, Dehradun, 248001</p>
+            <p className="phone"><AiOutlinePhone style={{ color: '#CD9F58', position: 'relative', top: '4px', fontSize: '18px', marginRight: '2px' }} /> +91 9876543210</p>
+            <p className="email"><AiOutlineMail style={{ color: '#CD9F58', position: 'relative', top: '4px', fontSize: '18px', marginRight: '2px' }} /> loremipsum@gmail.com</p>
+            <p className="address"><ImLocation style={{ color: '#CD9F58', position: 'relative', top: '4px', fontSize: '18px', marginRight: '2px' }} /> Kargi Chowk, Dehradun, 248001</p>
             </div>
         </div>
         <ContactForm />

@@ -40,3 +40,32 @@
 .contact_desc p {
     margin-bottom: 30px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .contact_details {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Contact_container {
+        flex-direction: column;
+    }
+    .contact_details {
+        width: 100%;
+        text-align: center;
+    }
+    .contact_desc {
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 13px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .contact_desc > p {
+        margin-right: 13px;
+    }
+}

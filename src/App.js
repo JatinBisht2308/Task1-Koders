@@ -22,11 +22,11 @@ function App() {
           <Route
           exact
           path={"/"}
-          element ={<Home/>}
+          element ={<Home />}
           />
           <Route
           path={"/about"}
-          element ={<About/>} />
+          element ={<About />} />
           <Route
           path={"/gallery"}
           element ={<GalleryPage />} />

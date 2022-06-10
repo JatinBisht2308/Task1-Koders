@@ -18,8 +18,8 @@
 
 .Categories_desc {
     background-color: #CD9F58;
-    width: 21%;
-    padding: 50px 50px;
+    width: 21rem;
+    /* padding: 50px 50px; */
     text-align: left;
     color: #1E1D1D;
     border-radius: 7px;
@@ -30,13 +30,14 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    margin: 50px 50px 0px 50px;
+    font-size: 2.2vw;
 }
 
 .Categories_desc p {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 30px 50px 20px 50px;
 }
 
 .Categories_desc button {
@@ -46,14 +47,124 @@
     color: white;
     cursor: pointer;
     transition: all ease-in 0.3s;
+    margin: 0px 0px 50px 50px;
 }
 .Categories_desc button:hover {
 
     background-color: #ffffff;
     color: black;
 
+
 }
 
 .Category_cards {
     display: flex;
+}
+
+@media only screen and (max-width: 1150px) {
+    .Categories_desc {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .Categories_desc {
+        width: 16rem;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .Categories_desc {
+        width: 14rem;
+        margin-right: 30px;
+    }
+    .Categories_desc h1 {
+        margin: 40px 40px 0px 40px;
+    }
+    .Categories_desc p {
+        margin: 30px 40px 20px 40px;
+    }
+    
+    .Categories_desc button {
+        padding: 12px 35px;
+        margin: 0px 0px 40px 40px;
+    }
+    
+}
+@media only screen and (max-width: 840px) {
+    .Categories_desc {
+        width: 13rem;
+    }
+    .Categories_desc h1 {
+        margin: 30px 30px 0px 30px;
+    }
+    .Categories_desc p {
+        margin: 20px 30px 20px 30px;
+        font-size: 14px;
+    }
+    
+    .Categories_desc button {
+        padding: 12px 35px;
+        margin: 0px 0px 30px 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .Categories_container {
+        margin-top: -12%;
+    }
+    .Categories_desc {
+        width: 12rem;
+        margin-right: 20px;
+    }
+    .Categories_desc p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .Categories_desc {
+        width: 11rem;
+        margin-right: 20px;
+    }
+    .Categories_desc p {
+        font-size: 11px;
+    }
+    .Categories_desc button {
+        padding: 8px 20px;
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .Categories_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Categories_desc {
+        margin: 0;
+        margin-top: 140px;
+        width: 16rem;
+    }
+    .Categories_desc p {
+        font-size: 15px;
+        margin: 20px 50px 20px 50px;
+    }
+    .Categories_desc button {
+        padding: 12px 30px;
+        font-size: 12px;
+        margin: 0px 0px 50px 50px;
+    }
+    .Categories_desc h1 {
+        font-size: 4.5vw;
+        margin: 50px 50px 0px 50px;
+    }
+    .Category_cards {
+        display: none;
+    }
+    
 }
