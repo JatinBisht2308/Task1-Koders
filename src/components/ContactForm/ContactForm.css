@@ -22,7 +22,7 @@
     border-radius: 5px;
 }
 
-.ContactForm_container button {
+.contact_btn {
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
     width: 350px;
@@ -34,19 +34,28 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .ContactForm_container input, textarea, button {
+    .ContactForm_container input, textarea {
+        width: 250px !important;
+    }
+    .contact_btn {
         width: 250px !important;
     }
 }
 
 @media only screen and (max-width: 850px) {
-    .ContactForm_container input, textarea, button {
+    .ContactForm_container input, textarea {
+        width: 200px !important;
+    }
+    .contact_btn {
         width: 200px !important;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .ContactForm_container input, textarea, button {
+    .ContactForm_container input, textarea {
+        width: 250px !important;
+    }
+    .contact_btn {
         width: 250px !important;
     }
 }

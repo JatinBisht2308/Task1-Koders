@@ -51,7 +51,7 @@ function GalleryPart({ images, name, text }) {
             {
                 img_array.map((imag, idx) => {
                     return (
-                        <div key={uuidv4()} className={`mySlides fade ${name}`}>
+                        <div key={uuidv4()} className={`mySlides fading ${name}`}>
                             <div className="numbertext">{`${idx+1}/${img_array.length}`}</div>
                             <img src={imag} style={{width: "60%"}} alt="" />
                             <div className="text">{text}</div>

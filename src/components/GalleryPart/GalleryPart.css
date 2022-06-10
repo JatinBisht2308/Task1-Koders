@@ -24,12 +24,13 @@
     margin: 0;
     display: none;
     transition: ease 0.5s;
+    font-size: 18px;
 }
 
 
 
 .GalleryPart_container:hover img {
-    opacity: 30%;
+    opacity: 20%;
 }
 
 .GalleryPart_container:hover h4 {
@@ -130,7 +131,7 @@
     top: 0;
 }
 
-.fade {
+.fading {
     animation-name: fade;
     animation-duration: 1.5s;
 }

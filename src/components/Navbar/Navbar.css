@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 .Navbar a{
-    color: #CD9F58;
-    text-decoration: none;
+    color: #CD9F58 !important;
+    text-decoration: none !important;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -10,7 +10,6 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    margin: 10px;
 }
 .left-nav > a{
     margin-left: 100px;
@@ -30,7 +29,7 @@
 }
 
 .navbar_container a:hover{
-  color: white;
+  color: white !important;
 }
 .navbar_container a{
   transition: all 0.3s ease-in-out;
@@ -57,6 +56,11 @@
 
 .toggleNavbar a {
     margin: 0px 40px 30px 40px;
+    cursor: pointer;
+}
+
+.toggleNavbar a:hover {
+    color: white !important;
 }
 
 @media only screen and (max-width: 1100px) {

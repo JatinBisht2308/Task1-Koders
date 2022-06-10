@@ -55,8 +55,8 @@ function GalleryPage() {
         <Navbar />
         <LandingScreen title="Gallery" imgsrc={gallery_main} desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto est ut exercitationem ex nobis dolorem magnam nesciunt enim a!" />
         <div className="gallery_section">
-        <GalleryPart key={uuidv4()} images={[aniv_img1, aniv_img2, aniv_img3, aniv_img4]} name="anniv" text="25th Anniversary"  />
-        <GalleryPart images={[bs_img1, bs_img2, bs_img3, bs_img4, bs_img5, bs_img6, bs_img7, bs_img8]} key={uuidv4()} name="bshower" text="Baby Shower" />
+        <GalleryPart images={[aniv_img1, aniv_img2, aniv_img3, aniv_img4]} name="anniv" text="25th Anniversary"  />
+        <GalleryPart images={[bs_img1, bs_img2, bs_img3, bs_img4, bs_img5, bs_img6, bs_img7, bs_img8]} name="bshower" text="Baby Shower" />
         <GalleryPart images={[bday_img1, bday_img2, bday_img3, bday_img4, bday_img5, bday_img6, bday_img7, bday_img8, bday_img9, bday_img10]} name="birthday" text="Birthday Decor" />
         <GalleryPart images={[brs_img1, brs_img2, brs_img3, brs_img4, brs_img5]} name="brshower" text="Bridal Shower" />
         <GalleryPart images={[canopy_1, canopy_2, canopy_3, canopy_4]} name="canopy" text="Canopy Setup" />

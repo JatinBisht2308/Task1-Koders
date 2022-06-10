@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+*{
+  transition: all 0.5s ease-out;
+}
+/* EventsCard STARTS */
+.EventsCard {
+  width: 23vw;
+  height: 27vw;
+  border-radius: 5px;
+  /* background: #cd9f58; */
+}
+/* EventsCard END */
+
+/* EVENT CARD IMAGE DIV STARTS  */
+.event_card_image {
+  width: 23vw;
+  height: 23vw;
+  overflow: hidden;
+}
+.event_card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.EventsCard:hover .event_card_image img {
+  transform: scale(1.15);
+}
+/* EVENT CARD IMAGE DIV END  */
+
+/* EVENT CARD DESC START */
+.event_card_desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background: #cd9f58;
+  height: 4vw;
+  padding: 0vw 1vw;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.event_card_desc > .heading > h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3vw;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: black;
+  margin-bottom: 0rem;
+}
+
+.event_card_desc > .arrow > a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  text-align: center;
+  font-size: 1.5vw;
+  align-items: center;
+}
+.event_card_desc a:hover {
+  color: white;
+}
+/* EVENT CARD DESC END */
+
+
+/*----------------- For tablets--------------------  */
+@media screen and (max-width:900px)
+{
+    .EventsCard {
+        width: 40vw;
+        height: 43vw;
+      }
+    .event_card_image {
+        width: 40vw;
+        height: 38vw;
+        overflow: hidden;
+      }
+      .event_card_desc {
+        height: 7vw;
+        padding: 0vw 3vw 0vw 3vw;
+      }
+      .event_card_desc > .heading h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.3vw;
+        align-items: center; 
+      }
+      
+      .event_card_desc .arrow a {
+        text-decoration: none;
+        color: black;
+        font-size:2.8vw;
+        align-items: center;
+      }
+      .event_card_desc a:hover {
+        color: white;
+      }
+
+}
+/*----------------- For Mobile--------------------  */
+@media screen and (max-width:570px)
+{
+    .EventsCard {
+        width: 76vw;
+        height: 90vw;
+      }
+    .event_card_image {
+        width: 76vw;
+        height: 80vw;
+        overflow: hidden;
+      }
+      .event_card_desc {
+        height: 10vw;
+        padding: 0vw 4vw;
+      }
+      .event_card_desc > .heading h3 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 4vw;
+        align-items: center;
+      }
+      
+      .event_card_desc > .arrow a {
+        text-decoration: none;
+        color: black;
+        font-size: 4.5vw;
+        align-items: center;
+      }
+      .event_card_desc a:hover {
+        color: white;
+      }
+}

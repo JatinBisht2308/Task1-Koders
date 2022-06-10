@@ -1,49 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-.left-story img{
-  width: 25vw;
-  height: 26vw;
-  border-radius:3px;
+
+.main_story{
+  overflow: hidden;
 }
-.right-story p {
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-size: 1.3vw;
-  font-weight: 400;
-  text-align: left;
-  letter-spacing: 0.09vw;
-  line-height: 1.8vw;
-  margin-top: -0.5vw;
+.story_left img {
+  max-width: 40vw;
+  max-height: 35vw;
+  border-radius:5px;
 }
 
-.Story-Container {
-  display: flex;
-  height: 33vw;
-  justify-content: space-between;
-  padding: 0vw 10vw;
-  margin-top:90px;
+/* Story right starts */
+.story_right h2 {
+  color: #cd9f58;
+  font-size: 2.8vw;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
 }
-.right-story {
+.story_right p,span {
+  color: #ffffff;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  /* text-align: left !important; */
+}
+.story_right  {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: left;
-  width: 100%;
-  height: 40vw;
-  /* margin-top:1.5vh; */
-  margin-left: 5.5vw;
+  justify-content: center;
+  align-items: left !important;
 }
-.left-story {
-  /* margin-top:2vw; */
-  padding-left: 0px;
-  width: 40vw;
-  height: 25vw;
-  /* background-color: antiquewhite; */
-}
+/* Story right end */
 
-.right-story h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #cd9f58;
-  text-align: left;
-  font-size: 3vw;
+
+/* ~~~~~~~~~~~~~~~~~~~~     For Mobiles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (max-width:575px)
+{
+  .story_left img {
+    width: 100vw;
+    height: auto;
+    max-width: 19rem;
+    max-height: 18rem;
+    border-radius: 3px;
+  }
+  .story_left{
+    /* overflow: hidden; */
+    align-items: start;
+  }
+  .story_right{
+    align-items:center;
+  }
+  .story_right {
+    text-align:center;
+  }
+  .main_story{
+    align-items:center;
+  }
+  .story_right h2{
+     font-size: 7vw;
+  }
+  .story_right p,span{
+    font-size: 3.6vw;
+  }
+  .hidden_p{
+    display: none;
+  }
 }

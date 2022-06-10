@@ -32,14 +32,14 @@ function Navbar() {
           <a onClick={(e) => {navigate(e)}}>contact</a>
         </div>
         <a className="toggleIcon" onClick={showNav}>
-          <MdOutlineLegendToggle style={{fontSize: "30px"}} />
+          <MdOutlineLegendToggle style={{fontSize: "30px", cursor: "pointer"}} />
         </a>
         </div>
         <div className="toggleNavbar">
-          <a href="" className="toggleNavbarItem">about</a>
-          <a href="" className="toggleNavbarItem">services</a>
-          <a href="" className="toggleNavbarItem">gallery</a>
-          <a href="" className="toggleNavbarItem">contact</a>
+          <a onClick={(e) => {navigate(e)}} className="toggleNavbarItem">about</a>
+          <a onClick={(e) => {navigate(e)}} className="toggleNavbarItem">services</a>
+          <a onClick={(e) => {navigate(e)}} className="toggleNavbarItem">gallery</a>
+          <a onClick={(e) => {navigate(e)}} className="toggleNavbarItem">contact</a>
         </div>
     </div>
   );
