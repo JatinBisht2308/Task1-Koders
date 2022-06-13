@@ -1,11 +1,14 @@
 import "./Serve.css";
 import about_us_serve from "../../images/Events/Proposal_2.jpg";
 import { RiHeartsFill } from "react-icons/ri";
+import "animate.css";
+import AOS from "aos";
 function Serve() {
+  AOS.init();
   return (
     <div className="Serve">
       <div className="Serve-Container">
-        <div className="left-serve ">
+        <div className="left-serve" data-aos="fade-right" data-aos-delay="200">
           <h2>Let us serve you the best...</h2>
           <p>
             As per customer requirements.. we serve the best in clients budget..
@@ -24,7 +27,7 @@ function Serve() {
             <RiHeartsFill style={{ color: "red", fontSize: "100%" }} />
           </h4>
         </div>
-        <div className="right-serve ">
+        <div className="right-serve" data-aos="fade-left" data-aos-delay="100">
           <div className="right-serve-image">
             <img src={about_us_serve} alt="" />
           </div>

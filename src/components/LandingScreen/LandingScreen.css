@@ -5,6 +5,7 @@
 .landingScreen_container {
     margin-top: -10px;
     position: relative;
+    overflow: hidden;
 }
 
 .landingScreen_container img {
@@ -34,9 +35,11 @@
 
 .content button {
     border: none;
-    background-color: white;
+    /* background-color: white; */
+    background: transparent;
+    border: 1px solid white;
     padding: 1.0vw 2.0vw;
-    color: #1E1D1D;
+    color: #ffefef;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     transition: all ease-in 0.2s;
@@ -45,9 +48,8 @@
 }
 
 .content button:hover {
-
-    background-color: #CD9F58;
-
+    background-color: #ffffff;
+    color: black;
 }
 
 @media only screen and (max-width: 840px) {

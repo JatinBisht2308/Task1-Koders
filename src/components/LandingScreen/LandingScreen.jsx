@@ -1,19 +1,21 @@
 import React from "react";
 import "./LandingScreen.css";
-import home_image from '../../images/home_image.jpeg';
+import 'animate.css';
+import AOS from 'aos';
 
 function LandingScreen({ imgsrc, title, desc, isButton }) {
+  AOS.init();
   return (
-    <div className="LandingScreen">
+    <div className="LandingScreen"
+    data-aos="fade-down"
+    data-aos-delay="150"
+    >
       <div className="landingScreen_container">
-        <img
-          src={imgsrc}
-          alt=""
-        />
+        <img src={imgsrc} alt="" />
         <div className="content">
           <h1> {title} </h1>
           <p>{desc}</p>
-          { isButton=="true" && <button>book now</button> }
+          {isButton == "true" && <button>book now</button>}
         </div>
       </div>
     </div>

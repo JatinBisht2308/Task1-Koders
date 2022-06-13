@@ -4,12 +4,14 @@ import "./Testimonial.css";
 import { Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import "animate.css";
+import AOS from "aos";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import AVTR1 from "../../images/avatar3.jpg";
-import AVTR2 from "../../images/avatar1.jpg"
+import AVTR1 from "../../images/avatar3.png";
+import AVTR2 from "../../images/avatar1.png";
 
 // Review data array of the users starts here
 const review = [
@@ -93,9 +95,16 @@ const review = [
 // Review data array of the users ends here
 
 function Testimonial() {
+  AOS.init({
+    duration: 1000
+  });
   return (
     <section className="Testimonial">
-      <div className="heading__testimonial">
+      <div
+        className="heading__testimonial"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <h5>Review from clients</h5>
         <h2>Testimonials</h2>
       </div>
@@ -105,6 +114,8 @@ function Testimonial() {
         spaceBetween={40}
         slidesPerView={1}
         pagination={{ clickable: true }}
+        data-aos="fade-left"
+        data-aos-delay="300"
       >
         {review.map(
           (
