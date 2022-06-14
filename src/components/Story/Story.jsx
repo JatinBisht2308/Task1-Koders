@@ -1,5 +1,5 @@
 import "./Story.css";
-import story_image from "../../images/Events/Theme.jpg";
+import story_image from "../../images/Events/Theme.webp";
 import "animate.css";
 import AOS from "aos";
 function Story() {

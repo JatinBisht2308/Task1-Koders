@@ -1,5 +1,6 @@
 import React from "react";
 import "./Testimonial.css";
+import { v4 as uuidv4} from "uuid";
 // import Swiper core and required modules
 import { Pagination } from "swiper";
 
@@ -119,12 +120,11 @@ function Testimonial() {
       >
         {review.map(
           (
-            { avatar, name, reviewFirstHalf, reviewSecondHalf },
-            laharReview
+            { avatar, name, reviewFirstHalf, reviewSecondHalf }
           ) => {
             return (
-              <SwiperSlide className="testimonial">
-                <div key={laharReview} className="client__avatar">
+              <SwiperSlide className="testimonial" key={uuidv4()}>
+                <div className="client__avatar">
                   <img src={avatar} alt="Reviewer image" />
                 </div>
                 <h2 className="client__name">{name}</h2>

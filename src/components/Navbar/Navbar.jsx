@@ -52,7 +52,7 @@ function Navbar() {
           data-aos-delay="300"
           data-aos-once="false"
         >
-          <img src={logo} alt="logo" />
+          <a onClick={() => { nav("/")}}><img src={logo} alt="logo" /></a>
         </div>
         <div
           className="right-nav"

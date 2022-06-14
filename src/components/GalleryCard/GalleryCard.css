@@ -4,11 +4,12 @@
 .GalleryCard {
     width: 30%;
     margin: 20px 0;
+    overflow: hidden;
 }
 
 .GalleryCard_container img {
-    width: 100%;
-    border-radius: 5px;
+    width: 180%;
+    transform: translateX(-20%);
     box-shadow: 10px 15px 30px rgba(0,0,0,0.4);
     margin-bottom: 15px;
 }

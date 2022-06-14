@@ -26,6 +26,7 @@
 }
 .nav-center-logo img{
     width: 100%;
+    cursor: pointer;
 }
 
 .navbar_container a:hover{

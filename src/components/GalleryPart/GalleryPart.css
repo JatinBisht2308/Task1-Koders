@@ -10,7 +10,9 @@
     margin: 2vw 2vw;
     cursor: pointer;
     position: relative;
-    
+    border: 1px solid #cd9f58;
+    border-radius: 5px;
+    background-color: black;
 }
 
 .GalleryPart_container h4 {
@@ -30,7 +32,7 @@
 
 
 .GalleryPart_container:hover img {
-    opacity: 20%;
+    opacity: 15%;
 }
 
 .GalleryPart_container:hover h4 {
@@ -41,6 +43,7 @@
     width: 100%;
     transition: ease 0.5s;
     border-radius: 5px;
+    opacity: 70%;
 }
 
 .slideshow_container {

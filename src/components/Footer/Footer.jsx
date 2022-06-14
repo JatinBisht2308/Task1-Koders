@@ -6,9 +6,18 @@ import { BsInstagram } from "react-icons/bs";
 import { IoLogoYoutube } from "react-icons/io";
 import "animate.css";
 import AOS from "aos";
+import { useNavigate } from 'react-router-dom';
 
 function Footer() {
+  let nav = useNavigate();
   AOS.init();
+
+  const navigate = (e) => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    nav("/" + e.target.innerText);
+  }
+
   return (
     <div className="Footer">
       <div className="Footer_container">
@@ -27,13 +36,13 @@ function Footer() {
             data-aos="fade-down"
             data-aos-delay="400"
           >
-            <img src={logo} alt="logo" />
+            <a onClick={() => { nav("/")}}><img src={logo} alt="logo" /></a>
           </div>
           <div className="right-foot" data-aos="fade-left" data-aos-delay="100">
-            <a href="">about</a>
-            <a href="">services</a>
-            <a href="">gallery</a>
-            <a href="">contact</a>
+            <a onClick={(e) => {navigate(e)}}>about</a>
+            <a onClick={(e) => {navigate(e)}}>services</a>
+            <a onClick={(e) => {navigate(e)}}>gallery</a>
+            <a onClick={(e) => {navigate(e)}}>contact</a>
           </div>
         </div>
         <div className="footer__socials">

@@ -63,6 +63,7 @@
   justify-content: center;
   text-align: center;
   width: 33%;
+  cursor: pointer;
 }
 .center-logo img{
   height: 7vw;
@@ -81,10 +82,11 @@
   font-size: 0.9rem;
   font-weight: normal;
   text-decoration: none;
-  color: #cd9f58;
+  color: #cd9f58 !important;
+  cursor: pointer;
 }
 .right-foot > a:hover {
-  color: white;
+  color: white !important;
   transition: all 0.5s ease;
 }
 

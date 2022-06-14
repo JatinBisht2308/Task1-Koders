@@ -11,15 +11,15 @@ import AOS from "aos";
 
 const items = [
   {
-    src: "/25anniversary_1.jpg",
+    src: "/25anniversary_1.webp",
     altText: "Slide 1",
   },
   {
-    src: "/25anniversary_2.jpg",
+    src: "/25anniversary_2.webp",
     altText: "Slide 2",
   },
   {
-    src: "/25anniversary_3.jpg",
+    src: "/25anniversary_3.webp",
     altText: "Slide 3",
   },
 ];

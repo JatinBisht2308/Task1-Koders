@@ -12,6 +12,7 @@
   transition: transform 500ms ease;
   width: 12rem;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .CategoryCard_container:hover{
@@ -19,7 +20,8 @@
   color: #CD9F58;
 }
 .CategoryCard_container img {
-  width: 100%;
+  width: 160%;
+  transform: translateX(-20%);
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -27,8 +29,8 @@
   font-family: 'Montserrat', sans-serif;
   margin: 15px 0px;
   font-weight: 500;
-  font-size: 1vw;
-} 
+  font-size: 0.7vw;
+}
 
 @media only screen and (max-width: 1040px) {
   .CategoryCard {
@@ -37,11 +39,17 @@
   .CategoryCard_container {
       width: 11rem;
   }
+  .CategoryCard_container h5 {
+    font-size:0.9vw
+  }
 }
 
 @media only screen and (max-width: 940px) {
   .CategoryCard_container {
       width: 10rem;
+  }
+  .CategoryCard_container h5 {
+    font-size:0.9vw
   }
 }
 
@@ -49,16 +57,25 @@
   .CategoryCard_container {
       width: 9rem;
   }
+  .CategoryCard_container h5 {
+    font-size:0.9vw
+  }
 }
 
 @media only screen and (max-width: 740px) {
   .CategoryCard_container {
       width: 8rem;
   }
+  .CategoryCard_container h5 {
+    font-size:0.9vw
+  }
 }
 
 @media only screen and (max-width: 660px) {
   .CategoryCard_container {
       width: 7rem;
+  }
+  .CategoryCard_container h5 {
+    font-size:0.9vw
   }
 }

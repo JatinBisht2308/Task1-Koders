@@ -1,5 +1,5 @@
 import "./Serve.css";
-import about_us_serve from "../../images/Events/Proposal_2.jpg";
+import about_us_serve from "../../images/Events/Proposal_2.webp";
 import { RiHeartsFill } from "react-icons/ri";
 import "animate.css";
 import AOS from "aos";

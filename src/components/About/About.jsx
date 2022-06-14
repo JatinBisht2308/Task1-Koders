@@ -1,5 +1,4 @@
-import logo from "../../logo.png";
-import home_image from "../../images/Haldi-wide.JPG";
+import home_image from "../../images/Haldi-wide.JPG.webp";
 import "./About.css";
 import Navbar from "../Navbar/Navbar";
 import LandingScreen from "../LandingScreen/LandingScreen";

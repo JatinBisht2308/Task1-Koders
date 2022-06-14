@@ -1,10 +1,10 @@
 import React from "react";
 import "./GalleryCard.css";
-import gallery_card from "../../images/gallery_card.jpeg";
 import "animate.css";
 import AOS from "aos";
 
-function GalleryCard() {
+function GalleryCard(props) {
+  AOS.init();
   return (
     <div
       className="GalleryCard"
@@ -12,8 +12,8 @@ function GalleryCard() {
       data-aos-delay='200'
     >
       <div className="GalleryCard_container">
-        <img src={gallery_card} alt="" />
-        <div className="gallery_card_desc">Flower Wedding Decoration</div>
+        <img src={props.imgsrc} alt="" />
+        <div className="gallery_card_desc">{props.title}</div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import logo from './logo.png';
-import home_image from './images/home_image.jpeg'
+import home_image from './images/home_image.webp'
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
@@ -12,8 +12,10 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services'
 import GalleryPage from './components/GalleryPage/GalleryPage';
-import Home from './components/Home/Home';
 import ServiceDesc from './components/ServiceDesc/ServiceDesc';
+import { Suspense,lazy } from 'react';
+const Home = lazy(()=>import('./components/Home/Home'))
+// import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
           <Route
           exact
           path={"/"}
-          element ={<Home />}
+          element ={<Suspense fallback={<div>Loading...</div>} ><Home /></Suspense>}
           />
           <Route
           path={"/about"}
