@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+.ServiceDesc {
+  background: rgba(0, 0, 0, 0.797);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5vw;
+  flex-wrap: wrap;
+}
+.left__Service__Desc{
+  width: 35%;
+  overflow: hidden;
+  /* margin-right: -25rem; */
+  margin-left: 2rem;
+}
+.left__inner__images {
+  width: 100%;
+  overflow: hidden;
+}
+.right__Service__Desc {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: left;
+  /* justify-content: space-between; */
+  margin-left: 3rem;
+  width: 55%;
+}
+.right__Service__Desc > h1 {
+  color: #cd9f58 !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+.stars_rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+.rupees_sign{
+  font-size: 1rem;
+  color: #cd9f58;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+}
+.price small {
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.sitara {
+  color: #cd9f58;
+  margin-bottom: 5px;
+}
+.stars_rating > h5{
+  margin-right: 3px;
+}
+.btn__service_right{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+.btn__service_right > .share{
+  margin-right: 1%;
+  padding: 0.5rem 1rem;
+  background: #cd9f58;
+  color: black;
+}
+.btn__service_right > .book_now{
+    margin-left: 1%;
+    padding: 0.5rem 1rem;
+    color: black;
+    background: white;
+}
+.carousel-item.active{
+  overflow: hidden !important;
+  width: 100%;
+}
+.carousel.slide{
+  width:100%;
+  /* overflow: hidden; */
+  margin: 1rem;
+}
+.carousel-inner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right_inner_desc > p{
+  font-family: 'Poppins',sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}
+
+/* for ipad  */
+@media only screen and(max-width:870px) {
+  .ServiceDesc{
+    padding: 20vw !important;
+  }
+  .right__Service__Desc{
+    text-align: center;
+    justify-content: center;
+  }
+  .left__Service__Desc{
+    width: 35rem;
+    margin: 0 !important;
+  }
+}

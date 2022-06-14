@@ -13,6 +13,7 @@ import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services'
 import GalleryPage from './components/GalleryPage/GalleryPage';
 import Home from './components/Home/Home';
+import ServiceDesc from './components/ServiceDesc/ServiceDesc';
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
           <Route
           path={"/services"}
           element ={<Services/>} />
+          <Route
+          path={"/servicedescription"}
+          element ={<ServiceDesc/>} />
         </Routes>
       </BrowserRouter>
       {/* <Contact /> */}

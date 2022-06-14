@@ -1,6 +1,7 @@
 import React from "react";
 import "./EventsCard.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom"
 import "animate.css";
 import AOS from "aos";
 
@@ -19,9 +20,9 @@ const EventsCard = ({ imgsrc, title, delayInEvents}) => {
           <h3>{title}</h3>
         </div>
         <div className="arrow">
-          <a href="">
+          <Link to="/servicedescription">
             <AiOutlineArrowRight />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
