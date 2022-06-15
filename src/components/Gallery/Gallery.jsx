@@ -1,5 +1,5 @@
 import React from "react";
-import GalleryCard from "../GalleryCard/GalleryCard";
+import { Suspense, lazy } from "react";
 import "./Gallery.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import "animate.css";
@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import roomdecor from "../../images/roomdecor_1.webp";
 import babyshower from "../../images/babyshower_1.webp";
 import bridalshower from "../../images/bridalshower_1.webp";
+const GalleryCard = lazy(() => import("../GalleryCard/GalleryCard"));
 
 function Gallery() {
   let nav = useNavigate();
@@ -26,9 +27,9 @@ function Gallery() {
           GALLERY
         </h1>
         <div className="gallery_cards">
-          <GalleryCard title="Room Decorations" imgsrc={roomdecor} />
-          <GalleryCard title="Baby Shower" imgsrc={babyshower} />
-          <GalleryCard title="Bridal Shower" imgsrc={bridalshower}/>
+          <Suspense fallback={<div>loading...</div>}><GalleryCard title="Room Decorations" imgsrc={roomdecor} /></Suspense>
+          <Suspense fallback={<div>loading...</div>}><GalleryCard title="Baby Shower" imgsrc={babyshower} /></Suspense>
+          <Suspense fallback={<div>loading...</div>}><GalleryCard title="Bridal Shower" imgsrc={bridalshower}/></Suspense>
         </div>
         <button onClick={handleClick} >
           view all <AiOutlineArrowRight style={{ verticalAlign: 'middle' }} />

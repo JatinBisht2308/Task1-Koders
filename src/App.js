@@ -14,6 +14,7 @@ import Services from './components/Services/Services'
 import GalleryPage from './components/GalleryPage/GalleryPage';
 import ServiceDesc from './components/ServiceDesc/ServiceDesc';
 import { Suspense,lazy } from 'react';
+import ServiceDescSetter from './components/ServiceDescSetter/ServiceDescSetter';
 const Home = lazy(()=>import('./components/Home/Home'))
 // import Home from './components/Home/Home';
 
@@ -40,8 +41,8 @@ function App() {
           path={"/services"}
           element ={<Services/>} />
           <Route
-          path={"/servicedescription"}
-          element ={<ServiceDesc/>} />
+          path={"/services/:id"}
+          element ={<ServiceDescSetter/>} />
         </Routes>
       </BrowserRouter>
       {/* <Contact /> */}

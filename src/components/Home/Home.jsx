@@ -1,12 +1,10 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import home_image from "../../images/home_image.webp";
-import Navbar from "../Navbar/Navbar";
-// import LandingScreen from "../LandingScreen/LandingScreen";
-import Categories from "../Categories/Categories";
-import Testimonial from "../Testimonial/Testimonial";
-import Footer from "../Footer/Footer";
 import Gallery from "../Gallery/Gallery";
-// import SplashScreen from "../SplashScreen/SplashScreen";
+const Navbar = lazy(() => import("../Navbar/Navbar"));
+const Categories = lazy(() => import("../Categories/Categories"));
+const Testimonial = lazy(() => import("../Testimonial/Testimonial"));
+const Footer = lazy(() => import("../Footer/Footer"));
 const LandingScreen = lazy(() => import("../LandingScreen/LandingScreen"));
 const SplashScreen = lazy(() => import("../SplashScreen/SplashScreen"));
 
@@ -27,7 +25,7 @@ function Home() {
 
       ) : (
         <div className="mainContainer">
-          <Navbar />
+          <Suspense fallback={<div>Loading...</div>}><Navbar /></Suspense>
           <Suspense fallback={<div>Loading...</div>}>
             <LandingScreen
               imgsrc={home_image}
@@ -36,10 +34,10 @@ function Home() {
               isButton="true"
             />
           </Suspense>
-          <Categories />
-          <Gallery />
-          <Testimonial />
-          <Footer />
+          <Suspense fallback={<div>Loading...</div>}><Categories /></Suspense>
+          <Suspense fallback={<div>Loading...</div>}><Gallery /></Suspense>
+          <Suspense fallback={<div>Loading...</div>}><Testimonial /></Suspense>
+          <Suspense fallback={<div>Loading...</div>}><Footer /></Suspense>
         </div>
       )}
     </div>

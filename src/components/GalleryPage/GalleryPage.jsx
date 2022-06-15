@@ -1,10 +1,7 @@
 import React from "react";
-import LandingScreen from "../LandingScreen/LandingScreen";
-import Navbar from "../Navbar/Navbar";
+import { Suspense, lazy } from "react";
 import "./GalleryPage.css";
 import gallery_main from "../../images/gallery_main.webp";
-import Footer from "../Footer/Footer";
-import GalleryPart from "../GalleryPart/GalleryPart";
 import aniv_img1 from "../../images/25anniversary_1.webp";
 import aniv_img2 from "../../images/25anniversary_2.webp";
 import aniv_img3 from "../../images/25anniversary_3.webp";
@@ -49,6 +46,11 @@ import roomdecor_3 from "../../images/roomdecor_3.webp";
 import roomdecor_4 from "../../images/roomdecor_4.webp";
 import { v4 as uuidv4 } from "uuid";
 
+const Navbar = lazy(() => import("../Navbar/Navbar"));
+const LandingScreen = lazy(() => import("../LandingScreen/LandingScreen"));
+const Footer = lazy(() => import("../Footer/Footer"));
+const GalleryPart = lazy(() => import("../GalleryPart/GalleryPart"));
+
 function GalleryPage() {
   return (
     <div
@@ -56,18 +58,22 @@ function GalleryPage() {
       data-aos="fade-left"
       data-aos-delay="100"
     >
-      <Navbar />
-      <LandingScreen
+      <Suspense fallback={<div>loading...</div>}><Navbar /></Suspense>
+      <Suspense fallback={<div>loading...</div>}><LandingScreen
         title="Gallery"
         imgsrc={gallery_main}
         desc="Here in the gallery section we have our some of the works sample to make an easy decision for you. We have almost every kind of event decoration system to make your event memorable in a very reasonable price. "
       />
+      </Suspense>
       <div className="gallery_section">
+      <Suspense fallback={<div>loading...</div>}>
         <GalleryPart
           images={[aniv_img1, aniv_img2, aniv_img3, aniv_img4]}
           name="anniv"
           text="25th Anniversary"
         />
+        </Suspense>
+        <Suspense fallback={<div>loading...</div>}>
         <GalleryPart
           images={[
             bs_img1,
@@ -83,6 +89,8 @@ function GalleryPage() {
           text="Baby Shower"
           delayInGallery={200}
         />
+        </Suspense>
+        <Suspense fallback={<div>loading...</div>}>
         <GalleryPart
           images={[
             bday_img1,
@@ -100,38 +108,49 @@ function GalleryPage() {
           text="Birthday Decor"
           delayInGallery={200}
         />
+        </Suspense>
+        <Suspense fallback={<div>loading...</div>}>
         <GalleryPart
           images={[brs_img1, brs_img2, brs_img3, brs_img4, brs_img5]}
           name="brshower"
           text="Bridal Shower"
           delayInGallery={300}
         />
+        </Suspense>
+        <Suspense fallback={<div>loading...</div>}>
         <GalleryPart
           images={[canopy_1, canopy_2, canopy_3, canopy_4]}
           name="canopy"
           text="Canopy Setup"
           delayInGallery={400}
         />
+        </Suspense>
+        <Suspense fallback={<div>loading...</div>}>
         <GalleryPart
           images={[mundan_1, mundan_2, mundan_3, mundan_4, mundan_5]}
           name="mundan"
           text="Mundan Decor"
           delayInGallery={500}
         />
+        </Suspense>
+        <Suspense fallback={<div>loading...</div>}>
         <GalleryPart
           images={[proposal_1, proposal_2]}
           name="proposal"
           text="Proposal"
           delayInGallery={600}
         />
+        </Suspense>
+        <Suspense fallback={<div>loading...</div>}>
         <GalleryPart
           images={[roomdecor_1, roomdecor_2, roomdecor_3, roomdecor_4]}
           name="roomdecor"
           text="Room Decor"
           delayInGallery={700}
         />
+        </Suspense>
       </div>
-      <Footer />
+      <Suspense fallback={<div>loading...</div>}><Footer /></Suspense>
     </div>
   );
 }

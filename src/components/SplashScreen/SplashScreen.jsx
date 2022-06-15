@@ -15,7 +15,7 @@ function SplashScreen() {
     },
   });
   AOS.init({
-    duration:10000
+    duration:1000
   });
   return (
     <div className="SplashScreen" data-aos="fade-up" data-aos-delay="300">

@@ -1,18 +1,19 @@
 import React from "react";
-import ContactForm from "../ContactForm/ContactForm";
-import Footer from "../Footer/Footer";
-import Navbar from "../Navbar/Navbar";
+import { Suspense, lazy } from "react";
 import "./Contact.css";
 import { ImLocation } from "react-icons/im";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import "animate.css";
 import AOS from "aos";
+const Navbar = lazy(() => import("../Navbar/Navbar"));
+const ContactForm = lazy(() => import("../ContactForm/ContactForm"));
+const Footer = lazy(() => import("../Footer/Footer"));
 
 function Contact() {
   AOS.init();
   return (
     <div className="Contact">
-      <Navbar />
+      <Suspense fallback={<div>loading...</div>}><Navbar /></Suspense>
       <div className="Contact_outer_container">
         <div className="Contact_container">
           <div
@@ -31,7 +32,7 @@ function Contact() {
                   style={{
                     color: "#CD9F58",
                     position: "relative",
-                    top: "4px",
+                    top: "-2px",
                     fontSize: "18px",
                     marginRight: "2px",
                   }}
@@ -43,7 +44,7 @@ function Contact() {
                   style={{
                     color: "#CD9F58",
                     position: "relative",
-                    top: "4px",
+                    top: "-2px",
                     fontSize: "18px",
                     marginRight: "2px",
                   }}
@@ -55,7 +56,7 @@ function Contact() {
                   style={{
                     color: "#CD9F58",
                     position: "relative",
-                    top: "4px",
+                    top: "-2px",
                     fontSize: "18px",
                     marginRight: "2px",
                   }}
@@ -64,10 +65,10 @@ function Contact() {
               </p>
             </div>
           </div>
-          <ContactForm />
+          <Suspense fallback={<div>loading...</div>}><ContactForm /></Suspense>
         </div>
       </div>
-      <Footer />
+      <Suspense fallback={<div>loading...</div>}><Footer /></Suspense>
     </div>
   );
 }

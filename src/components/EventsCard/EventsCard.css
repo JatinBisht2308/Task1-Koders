@@ -18,6 +18,7 @@
   width: 23vw;
   height: 23vw;
   overflow: hidden;
+  text-decoration: none !important;
 }
 .event_card_image img {
   width: 100%;
@@ -25,6 +26,7 @@
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  text-decoration: none !important;
 }
 .EventsCard:hover .event_card_image img {
   transform: scale(1.15);
@@ -42,6 +44,7 @@
   padding: 0vw 1vw;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  text-decoration: none !important;
 }
 .event_card_desc > .heading > h3 {
   font-family: "Montserrat", sans-serif;
@@ -51,11 +54,12 @@
   align-items: center;
   text-align: left;
   color: black;
+  text-decoration: none !important;
   margin-bottom: 0rem;
 }
 
 .event_card_desc > .arrow > a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
   display: flex;
   text-align: center;

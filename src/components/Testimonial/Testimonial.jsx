@@ -1,9 +1,9 @@
 import React from "react";
 import "./Testimonial.css";
-import { v4 as uuidv4} from "uuid";
+import { v4 as uuidv4 } from "uuid";
 // import Swiper core and required modules
 import { Pagination } from "swiper";
-
+import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "animate.css";
 import AOS from "aos";
@@ -97,7 +97,7 @@ const review = [
 
 function Testimonial() {
   AOS.init({
-    duration: 1000
+    duration: 1000,
   });
   return (
     <section className="Testimonial">
@@ -117,25 +117,26 @@ function Testimonial() {
         pagination={{ clickable: true }}
         data-aos="fade-left"
         data-aos-delay="300"
+        data-swiper-autoplay="2000"
       >
-        {review.map(
-          (
-            { avatar, name, reviewFirstHalf, reviewSecondHalf }
-          ) => {
-            return (
-              <SwiperSlide className="testimonial" key={uuidv4()}>
-                <div className="client__avatar">
-                  <img src={avatar} alt="Reviewer image" />
-                </div>
-                <h2 className="client__name">{name}</h2>
-                <small className="client__review">
-                  {reviewFirstHalf}
-                  <p className="hide_testi">{reviewSecondHalf}</p>
-                </small>
-              </SwiperSlide>
-            );
-          }
-        )}
+        {review.map(({ avatar, name, reviewFirstHalf, reviewSecondHalf }) => {
+          return (
+            <SwiperSlide
+              data-swiper-autoplay="2000"
+              className="testimonial"
+              key={uuidv4()}
+            >
+              <div className="client__avatar">
+                <img src={avatar} alt="Reviewer image" />
+              </div>
+              <h2 className="client__name">{name}</h2>
+              <small className="client__review">
+                {reviewFirstHalf}
+                <p className="hide_testi">{reviewSecondHalf}</p>
+              </small>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </section>
   );

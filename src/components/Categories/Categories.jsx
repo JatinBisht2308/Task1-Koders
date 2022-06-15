@@ -1,12 +1,13 @@
 import React from "react";
 import "./Categories.css";
-import CategorieCard from "../CategoryCard/CategoryCard";
+import { Suspense, lazy } from "react";
 import "animate.css";
 import AOS from "aos";
 import { useNavigate } from 'react-router-dom';
 import imgsrc1 from "../../images/25anniversary_1.webp";
 import imgsrc2 from "../../images/birthday_1.webp";
 import imgsrc3 from "../../images/mundan_1.webp";
+const CategorieCard = lazy(() => import("../CategoryCard/CategoryCard"));
 
 function Categories() {
 
@@ -40,9 +41,9 @@ function Categories() {
           </div>
         </div>
         <div className="Category_cards">
-          <CategorieCard heading="WEDDING EVENTS" imgsrc={imgsrc1} />
-          <CategorieCard heading="BIRTHDAY EVENTS" imgsrc={imgsrc2} />
-          <CategorieCard heading="CORPORATE EVENTS" imgsrc={imgsrc3} />
+          <Suspense fallback={<div>loading...</div>}><CategorieCard heading="WEDDING EVENTS" imgsrc={imgsrc1} /></Suspense>
+          <Suspense fallback={<div>loading...</div>}><CategorieCard heading="BIRTHDAY EVENTS" imgsrc={imgsrc2} /></Suspense>
+          <Suspense fallback={<div>loading...</div>}><CategorieCard heading="CORPORATE EVENTS" imgsrc={imgsrc3} /></Suspense>
         </div>
       </div>
     </div>

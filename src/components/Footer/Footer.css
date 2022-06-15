@@ -93,16 +93,20 @@
 /* RIGHT FOOTER DIV END */
 .footer__socials {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: space-evenly;
+  /* gap: 0.5rem; */
   margin: 1.3rem 0rem;
   text-align: center;
+  width: 33%;
 }
 .footer__socials > a {
   padding: 0.8rem;
   border-radius: 0.7rem;
   display: flex;
   border: 1px solid transparent;
+}
+.footer_socials2{
+  display: none;
 }
 
 /* adding hover effects to the socials */
@@ -144,6 +148,7 @@
   }
   .container1 {
     flex-direction: column;
+    margin-top: 2rem;
   }
   .right-foot {
     width: fit-content;
@@ -163,6 +168,26 @@
   }
   .icon__a {
     font-size: 25px;
+  }
+  .footer__socials{
+    display: none;
+  }
+  .footer_socials2{
+    display: flex;
+  }
+  .footer__socials2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 1.3rem 0rem;
+    text-align: center;
+    width: 33%;
+  }
+  .footer__socials2 > a {
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
   }
 }
 

@@ -64,7 +64,7 @@
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
-  user-select: none; 
+  user-select: none;
   transition: all 0.7s ease-in-out;
 }
 .testimonial:hover {
@@ -105,8 +105,8 @@
 }
 /* bullets below the tesimonial cards color setter end*/
 
+/* swiper preview and next button */
 /* CLIENT REVIEW END */
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~For tablets ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (max-width: 1024px) {
   .container {
@@ -121,7 +121,7 @@
   .client__avatar {
     width: 6rem;
   }
-  .client__name{
+  .client__name {
     font-size: 3vw;
   }
   .container.testimonials__container {
@@ -129,7 +129,7 @@
     padding: 3rem 2rem;
     padding-top: 0rem;
   }
-  .testimonial{
+  .testimonial {
     padding: 2rem 2rem;
   }
 }
@@ -153,17 +153,17 @@
   .client__avatar {
     width: 5rem;
   }
-  .client__name{
+  .client__name {
     font-size: 5vw;
   }
-  .client__review{
+  .client__review {
     font-size: 3vw;
     text-align: center;
   }
-  .client__review p{
-    display:none;
+  .client__review p {
+    display: none;
   }
-  .testimonial{
+  .testimonial {
     padding: 2rem 2rem;
   }
 }

@@ -15,7 +15,7 @@ function LandingScreen({ imgsrc, title, desc, isButton }) {
         <div className="content">
           <h1> {title} </h1>
           <p>{desc}</p>
-          {isButton == "true" && <button>book now</button>}
+          {isButton == "true" && <button onClick={() => { window.open("https://wa.me/919720058865", "_blank")}} >book now</button>}
         </div>
       </div>
     </div>
