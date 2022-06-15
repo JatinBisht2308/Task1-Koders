@@ -41,7 +41,7 @@
 /* TESTIOMONIAL CONTAINER START */
 .container.testimonials__container {
   width: 60%;
-  padding: 3rem 4rem;
+  padding: 3rem 6rem;
   padding-top: 0rem;
 }
 
@@ -104,7 +104,19 @@
   background: #cd9f58 !important;
 }
 /* bullets below the tesimonial cards color setter end*/
-
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 37% !important;
+  font-size: 0.5rem !important;
+  margin-top: 0rem !important;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  color:  #cd9f58 !important;
+}
 /* swiper preview and next button */
 /* CLIENT REVIEW END */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~For tablets ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -132,6 +144,10 @@
   .testimonial {
     padding: 2rem 2rem;
   }
+  .swiper-button-next,
+.swiper-button-prev {
+  display : none !important;
+}
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ For mobile ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -166,4 +182,8 @@
   .testimonial {
     padding: 2rem 2rem;
   }
-}
+  .swiper-button-next,
+  .swiper-button-prev {
+   display:none !important;
+  }
+  }

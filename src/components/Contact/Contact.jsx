@@ -46,7 +46,7 @@ function Contact() {
                     position: "relative",
                     top: "-2px",
                     fontSize: "18px",
-                    marginRight: "2px",
+                    marginRight: "3px",
                   }}
                 />{" "}
                 leharevents@gmail.com

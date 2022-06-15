@@ -11,6 +11,8 @@ import AOS from "aos";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 import AVTR1 from "../../images/avatar3.png";
 import AVTR2 from "../../images/avatar1.png";
 
@@ -111,9 +113,10 @@ function Testimonial() {
       </div>
       <Swiper
         className="container testimonials__container"
-        modules={[Pagination]}
+        modules={[Pagination,Navigation]}
         spaceBetween={40}
         slidesPerView={1}
+        navigation={true}
         pagination={{ clickable: true }}
         data-aos="fade-left"
         data-aos-delay="300"

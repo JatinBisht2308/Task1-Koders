@@ -24,15 +24,7 @@ function ContactForm() {
             setName(e.target.value);
           }}
         />
-        <input
-          type="email"
-          placeholder="E-mail"
-          data-aos="fade-right"
-          data-aos-delay="650"
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-        />
+        
         <textarea
           placeholder="Message"
           rows="5"
@@ -41,6 +33,7 @@ function ContactForm() {
           onChange={(e) => {
             setText(e.target.value);
           }}
+          style={{resize: 'none'}}
         />
         <button
           className="contact_btn"
